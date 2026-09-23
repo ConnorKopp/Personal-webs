@@ -9,6 +9,6 @@ class HomepageTests(SimpleTestCase):
 
 class AboutpagesTests(SimpleTestCase):
     def test_url_exists_at_correct_location(self):
-        responce = self.client.get("/")
+        responce = self.client.get("/about/")
         self.assertEqual(responce.status_code, 200)
     
